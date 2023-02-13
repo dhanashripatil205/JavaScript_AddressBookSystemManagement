@@ -114,7 +114,7 @@ class Contact{
 }
 
 try{
-    let contact = new Contact("Ashika", "Chadaga", "#3ac910", "Bangalore", "Karnataka", "560 043", "91 9481448524", "ashika@gmail.com");
+    let contact = new Contact("Dhanashri", "Patil", "#3ac910", "Mumbai", "Maharashtra", "400 025", "91 6895698566", "dp@gmail.com");
     console.log(contact.toString());
 }
 catch(e){

@@ -195,10 +195,10 @@ function getCountOfContactsByState(state){
     return addressBookArray.filter((contact) => contact.state == state).length;
 }
 
-let firstContact = new Contact("Ashika", "Chadaga", "#3ac910", "Bangalore", "Karnataka", "560 043", "91 9481448524", "ashika@gmail.com");
-let secondContact = new Contact("Killua", "Zoldyk", "#6ac810", "KokuroMountain", "Japan", "234 567", "91 9898989897", "killua@gmail.com");
-let thirdContact = new Contact("Alexis", "Rose", "#8105bc", "SchittsCreek", "Canada", "550 864", "91 9485768574", "alexis@gmail.com");
-let fourthContact = new Contact("David", "Rose", "#8105bc", "SchittsCreek", "Canada", "550 864", "91 9465837465", "david@gmail.com");
+let firstContact = new Contact("Dhanashri", "Patil", "#3ac910", "Mumbai", "Maharashtra", "560 043", "91 9481448524", "dp@gmail.com");
+let secondContact = new Contact("Kriya", "Sawant", "#6ac810", "Pune", "Maharashtra", "234 567", "91 9456896523", "ks@gmail.com");
+let thirdContact = new Contact("Kriya", "Sawant", "#8105bc", "Ratnagiri", "America", "550 864", "91 9485768574", "ks@gmail.com");
+let fourthContact = new Contact("Kunal", "Sawant", "#8105bc", "Sindhudurg", "Maharashtra", "550 864", "91 9465837465", "kk@gmail.com");
 
 try {
     addressBookArray.push(firstContact);

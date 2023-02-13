@@ -169,8 +169,8 @@ function getCountOfContacts(count) {
     return count;
 }
 
-let firstContact = new Contact("Ashika", "Chadaga", "#3ac910", "Bangalore", "Karnataka", "560 043", "91 9481448524", "ashika@gmail.com");
-let secondContact = new Contact("Killua", "Zoldyk", "#6ac810", "KokuroMontain", "Japan", "234 567", "91 9898989897", "killua@gmail.com");
+let firstContact = new Contact("Dhanashri", "Patil", "#3ac910", "Mumbai", "Maharashtra", "560 043", "91 9456986522", "dp@gmail.com");
+let secondContact = new Contact("Kriti", "Sawant", "#6ac810", "Pune", "Maharashtra", "123 569", "91 9898989897", "ks@gmail.com");
 
 try {
     addressBookArray.push(firstContact);
@@ -182,13 +182,13 @@ try {
 console.log(addressBookArray);
 
 console.log("\nAfter Editing Contact");
-editContact("Ashika", "Chadaga", "city", "Kodagu");
+editContact("Dhanashri", "Patil", "Mumbai", "Maharashtra");
 console.log(addressBookArray);
 
 console.log("\nCount of Contacts : " + addressBookArray.reduce(getCountOfContacts, 0));
 
 console.log("\nAfter Deleting Contact");
-deleteContact("Ashika", "Chadaga");
+deleteContact("Dhanashri", "Patil");
 console.log(addressBookArray);
 
 console.log("\nCount of Contacts : " + addressBookArray.reduce(getCountOfContacts, 0));

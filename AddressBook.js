@@ -212,13 +212,13 @@ try {
 console.log(addressBookArray);
 
 console.log("\nAfter Editing Contact");
-editContact("Ashika", "Chadaga", "city", "Kodagu");
+editContact("Dhanashri", "Patil", "city", "Mumbai");
 console.log(addressBookArray);
 
 console.log("\nCount of Contacts : " + addressBookArray.reduce(getCountOfContacts, 0));
 
 console.log("\nAfter Deleting Contact");
-deleteContact("Ashika", "Chadaga");
+deleteContact("Dhanashri", "Patil");
 console.log(addressBookArray);
 
 console.log("\nCount of Contacts : " + addressBookArray.reduce(getCountOfContacts, 0));
@@ -231,18 +231,17 @@ try {
 }
 console.log(addressBookArray);
 
-console.log("\nSearch Killua In City - Kokuro Mountain");
-console.log(searchContactByCity("Killua", "KokuroMountain"));
+console.log("\nSearch Kriya In City - Pune");
+console.log(searchContactByCity("Kriya", "Pune"));
 
-console.log("\nSearch Killua In State - Japan");
-console.log(searchContactByState("Killua", "Japan"));
+console.log("\nSearch Kriya In State - Maharashtra");
+console.log(searchContactByState("Kriya", "Maharashtra"));
 
+console.log("\nView Contacts By City : Pune \n" );
+console.log(viewContactsByCity("Pune"));
 
-console.log("\nView Contacts By City : Schitt's Creek \n" );
-console.log(viewContactsByCity("SchittsCreek"));
+console.log("\nView Contacts By State : Maharashtra \n" );
+console.log(viewContactsByState("Maharashtra"));
 
-console.log("\nView Contacts By State : Canada \n" );
-console.log(viewContactsByState("Canada"));
-
-console.log("\nNumber of Contacts residing in City : Schitt's Creek = " + getCountOfContactsByCity("SchittsCreek"));
-console.log("\nNumber of Contacts residing in State : Canada = " + getCountOfContactsByState("Canada"));
+console.log("\nNumber of Contacts residing in City : Pune = " + getCountOfContactsByCity("Pune"));
+console.log("\nNumber of Contacts residing in State : Maharashtra = " + getCountOfContactsByState("Maharashtra"));

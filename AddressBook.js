@@ -187,10 +187,10 @@ function viewContactsByState(state){
     return addressBookArray.filter((contact) => contact.state == state);
 }
 
-let firstContact = new Contact("Ashika", "Chadaga", "#3ac910", "Bangalore", "Karnataka", "560 043", "91 9481448524", "ashika@gmail.com");
-let secondContact = new Contact("Killua", "Zoldyk", "#6ac810", "KokuroMountain", "Japan", "234 567", "91 9898989897", "killua@gmail.com");
-let thirdContact = new Contact("Alexis", "Rose", "#8105bc", "SchittsCreek", "Canada", "550 864", "91 9485768574", "alexis@gmail.com");
-let fourthContact = new Contact("David", "Rose", "#8105bc", "SchittsCreek", "Canada", "550 864", "91 9465837465", "david@gmail.com");
+let firstContact = new Contact("Dhanashri", "Patil", "#3ac910", "Mumbai", "Maharashtra", "560 043", "91 9481448524", "dp@gmail.com");
+let secondContact = new Contact("Kriya", "Sawant", "#6ac810", "Pune", "Maharashtra", "234 567", "91 9456896523", "ks@gmail.com");
+let thirdContact = new Contact("Kriya", "Sawant", "#8105bc", "Ratnagiri", "America", "550 864", "91 9485768574", "ks@gmail.com");
+let fourthContact = new Contact("Kunal", "Sawant", "#8105bc", "Sindhudurg", "Maharashtra", "550 864", "91 9465837465", "kk@gmail.com");
 
 try {
     addressBookArray.push(firstContact);
@@ -204,13 +204,13 @@ try {
 console.log(addressBookArray);
 
 console.log("\nAfter Editing Contact");
-editContact("Ashika", "Chadaga", "city", "Kodagu");
+editContact("Dhanashri", "Patil", "city", "Mumbai");
 console.log(addressBookArray);
 
 console.log("\nCount of Contacts : " + addressBookArray.reduce(getCountOfContacts, 0));
 
 console.log("\nAfter Deleting Contact");
-deleteContact("Ashika", "Chadaga");
+deleteContact("Dhanashri", "Patil");
 console.log(addressBookArray);
 
 console.log("\nCount of Contacts : " + addressBookArray.reduce(getCountOfContacts, 0));
@@ -223,15 +223,15 @@ try {
 }
 console.log(addressBookArray);
 
-console.log("\nSearch Killua In City - KokuroMountain");
-console.log(searchContactByCity("Killua", "KokuroMountain"));
+console.log("\nSearch Kriya In City - Pune");
+console.log(searchContactByCity("Kriya", "Pune"));
 
-console.log("\nSearch Killua In State - Japan");
-console.log(searchContactByState("Killua", "Japan"));
+console.log("\nSearch Kriya In State - Maharashtra");
+console.log(searchContactByState("Kriya", "Maharashtra"));
 
 
-console.log("\nView Contacts By City : SchittsCreek \n" );
-console.log(viewContactsByCity("SchittsCreek"));
+console.log("\nView Contacts By City : Pune \n" );
+console.log(viewContactsByCity("Pune"));
 
-console.log("\nView Contacts By State : Canada \n" );
-console.log(viewContactsByState("Canada"));
+console.log("\nView Contacts By State : Maharashtra \n" );
+console.log(viewContactsByState("Maharashtra"));

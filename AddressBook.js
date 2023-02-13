@@ -150,13 +150,13 @@ function editContact(firstName, lastName, property, newValue) {
 }
 
 try {
-    addressBookArray.push(new Contact("Ashika", "Chadaga", "#3ac910", "Bangalore", "Karnataka", "560 043", "91 9481448524", "ashika@gmail.com"));
+    addressBookArray.push(new Contact("Dhanashri", "Patil", "#3ac910", "Mumbai", "Maharashtra", "400 025", "91 9405632266", "dp@gmail.com"));
 } catch (e) {
     console.error(e);
 }
 
 try {
-    addressBookArray.push(new Contact("Killua", "Zoldyk", "#6ac810", "KokuroMontain", "Japan", "234 567", "91 9898989897", "killua@gmail.com"));
+    addressBookArray.push(new Contact("Kriti", "Sawant", "#6ac810", "Pune", "Maharashtra", "234 567", "91 9456986235", "ks@gmail.com"));
 } catch (e) {
     console.error(e);
 }
@@ -164,5 +164,5 @@ try {
 console.log(addressBookArray);
 
 console.log("\nAfter Editing Contact")
-editContact("Ashika", "Chadaga", "city", "Kodagu");
+editContact("Dhanashri", "Patil", "Mumbai", "Maharashtra");
 console.log(addressBookArray);

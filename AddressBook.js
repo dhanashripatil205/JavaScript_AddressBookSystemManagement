@@ -73,6 +73,6 @@ class Contact{
     }
 }
 
-let contact = new Contact("Ashika", "CS", "Bangalore", "Karnataka", 560043, 9481448524, "ashika@gmail.com");
+let contact = new Contact("Dhanashri", "EXTC", "Mumbai", "Maharastra", 400025, 9405639866, "dp@gmail.com");
 console.log(contact.toString());
 
